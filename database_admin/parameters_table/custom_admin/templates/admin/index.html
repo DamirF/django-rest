@@ -1,0 +1,15 @@
+{% extends "admin/index.html" %}
+
+{% comment %}{% block extrastyle %}
+    {{ block.super }}
+    {# --- custom styles --- #}
+{% endblock %}{% endcomment %}
+
+{% block content %}
+    <div class="custom_block">
+        <button class="button"><a href="{% url 'admin-show_params_table' %}">Показать таблицу параметров</a></button>
+        <p></p>
+    </div>
+
+    {{ block.super }}
+{% endblock %}
